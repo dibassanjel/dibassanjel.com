@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibas's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-background"></div>
+    <div class="content">
+        <header>
+            <div class="navbar">
+                <div class="leftside">DIBAS-WEB DEVELOPER</div>
+                <div class="rightside">
+                    <ul>
+                        <li onclick="scrollToSection('introduction')">HOME</li>
+                        <li onclick="scrollToSection('qualifications')">QUALIFICATIONS</li>
+                        <li onclick="scrollToSection('projects')">PROJECTS</li>
+                        <li onclick="scrollToSection('contact')">CONTACT ME</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="centered-content">
+            Hey, My name is <span class="colorname">Dibas Sanjel</span> and I am a <span id="element"></span>
+        </div>
+    </div>
+    <div class="introduction section" id="introduction">
+        <div class="section-content">
+            <h1>Introduction</h1>
+            <div class="info-line">
+                <span class="dot"></span><span class="info">My name is Dibas Sanjel.</span>
+            </div>
+            <div class="info-line">
+                <span class="dot"></span><span class="info">I am 16 years old.</span>
+            </div>
+            <div class="info-line">
+                <span class="dot"></span><span class="info">I am male.</span>
+            </div>
+            <div class="info-line">
+                <span class="dot"></span><span class="info">I am passionate about web development.</span>
+            </div>
+            <div class="info-line">
+                <span class="dot"></span><span class="info">I am currently learning HTML, CSS, and JavaScript.</span>
+            </div>
+        </div>
+    </div>
+    <div class="qualifications section" id="qualifications">
+        <div class="section-content">
+            <h1>Qualifications</h1>
+            <div class="info-line">
+                <span class="dot"></span><span class="info">Completed several online courses on web development.</span>
+            </div>
+            <div class="info-line">
+                <span class="dot"></span><span class="info">Built a few personal projects to practice my skills.</span>
+            </div>
+            <div class="info-line">
+                <span class="dot"></span><span class="info">Continuously learning and improving through online resources.</span>
+            </div>
+        </div>
+    </div>
+    <div class="projects section" id="projects">
+        <div class="section-content">
+            <h1>Projects</h1>
+            <div class="projects-buttons">
+                <button class="project-button">Portfolio Website</button>
+                <a href="Blackjack game/blackjack.html" class="project-button" target="_blank">Basic Blackjack Game</a>
+            </div>
+        </div>
+    </div>
+    <div class="contact section" id="contact">
+        <div class="section-content">
+            <h1>Contact Me</h1>
+            <div class="contact-buttons">
+                <a href="https://www.facebook.com/khaias.sanjel" class="contact-button" target="_blank">Facebook</a>
+                <a href="mailto:work.dibassanjel@gmail.com" class="contact-button">Gmail</a>
+            </div>
+            <div class="contact-form">
+                <form action="submit_form.php" method="post">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="email" name="email" placeholder="Type a Message" required>
+                    </div>
+                    <button type="submit" class="form-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <center><p>&copy; 2024 Dibas Sanjel. All rights reserved.</p></center>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
